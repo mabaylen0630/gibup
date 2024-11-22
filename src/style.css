@@ -1,0 +1,270 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/dog.gif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+header {
+    background-color: #333;
+    color: #81ac5e;
+    text-align: center;
+    padding: .3px 0;
+    font-family: courier;
+    font-size: 13px;
+}
+nav {
+    background-color: rgba(68, 68, 68, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    font-family: courier;
+}
+
+nav a {
+    color: rgb(212, 7, 92); /* Change to black like in the button design */
+    background-color: rgb(223, 181, 197); /* Match the white background */
+    border-radius: 10px; /* Rounded corners like the button */
+    text-decoration: none;
+    padding: 10px 40px; /* Larger padding for better spacing */
+    border: 1px solid rgb(170, 0, 65); /* Add a border */
+    font-size: 17px;
+    font-weight: 600; /* Bold text */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 rgb(56, 77, 56); /* Default no shadow */
+    display: inline-block; /* Ensure buttons align properly */
+}
+
+nav a:hover {
+    transform: translateY(-4px); /* Lift effect */
+    box-shadow: 2px 5px 0 rgb(155, 74, 101); /* Add shadow on hover */
+}
+
+nav a:active {
+    transform: translateY(2px); /* Button pressed effect */
+    box-shadow: 0 0 0 rgb(58, 75, 51); /* Remove shadow */
+}
+
+
+section {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(68, 68, 68, 0.7);
+    border-radius: 15px;
+    font-family: courier;
+    font-size: 20px;
+    color: #81ac5e;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+section:hover {
+    background-color: rgba(68, 68, 68, 0.9); /* Slightly darker background */
+    transform: scale(1.02); /* Subtle scaling effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: courier;
+    font-size: 15px;
+    
+}
+/* music toggle */
+/* Music toggle button */
+.music-toggle {
+    position: fixed; /* Fix position */
+    bottom: 60px; /* Adjusted to not overlap with footer */
+    right: 20px; /* Position in the bottom-right corner */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Adjust button size */
+button.learn-more {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.5em 1em; /* Smaller padding */
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 1em; /* Slightly rounded corners */
+    font-size: 14px; /* Reduced font size */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more:hover {
+    background: #ffe9e9;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.25em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.25em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.25em, -1em);
+    transform: translate3d(0, 0.25em, -1em);
+}
+
+button.learn-more:active {
+    background: #ffe9e9;
+    -webkit-transform: translate(0em, 0.5em);
+    transform: translate(0em, 0.5em);
+}
+
+button.learn-more:active::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}
+
+
+.personal-info {
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+    background-color: rgba(68, 68, 68, 0.7);
+    border-radius: 25px;
+    font-family: courier;
+    font-size: 20px;
+    color: #81ac5e;
+    transition: all 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+.personal-info p {
+    padding: 10px 0;
+    text-align: center;
+    font-family: courier;
+    font-size: 20px;
+    color: #81ac5e; /* Default text color */
+    background-color: transparent; /* Default transparent background */
+    border-radius: 10px; /* Rounded corners for hover effect */
+    transition: all 0.3s ease-in-out; /* Smooth hover animation */
+}
+
+.personal-info p:hover {
+    background-color: rgba(81, 172, 94, 0.1); /* Add a soft green highlight */
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Base styles (default for larger screens) */
+.photo-album {
+    display: flex; /* Centers the content horizontally */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 70vh; /* Adjust container height as needed */
+    position: relative; /* For navigation arrows */
+    margin: auto;
+    overflow: hidden; /* Ensures content stays within bounds */
+}
+
+.photo-album img {
+    max-width: 80%; /* Restrict image width to a percentage of container */
+    max-height: 80%; /* Restrict image height to a percentage of container */
+    display: block; /* Ensures proper centering */
+    margin: auto; /* Centers the image within its parent container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+}
+
+.photo-album .prev, 
+.photo-album .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Position vertically centered */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10;
+}
+
+.photo-album .prev {
+    left: 10px; /* Position arrow on the left */
+}
+
+.photo-album .next {
+    right: 10px; /* Position arrow on the right */
+}
+
+.photo-album .prev:hover,
+.photo-album .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .photo-album img {
+        max-width: 90%; /* Reduce image size for smaller screens */
+        max-height: 70%; /* Adjust height for smaller viewports */
+    }
+
+    .photo-album {
+        height: 60vh; /* Reduce container height on smaller screens */
+    }
+
+    .photo-album .prev, 
+    .photo-album .next {
+        font-size: 20px; /* Reduce size of navigation arrows */
+        padding: 8px;
+    }
+}
+
+/* Further adjustments for very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .photo-album img {
+        max-width: 95%; /* Slightly larger images for mobile */
+        max-height: 65%;
+    }
+
+    .photo-album {
+        height: 50vh; /* Reduce container height on very small screens */
+    }
+
+    .photo-album .prev, 
+    .photo-album .next {
+        font-size: 18px; /* Further reduce size of navigation arrows */
+        padding: 6px;
+    }
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
