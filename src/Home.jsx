@@ -13,8 +13,8 @@ const Home = () => {
                 <p>Random Photos that I've captured :></p>
             </section>
             <section id="short video">
-                <h2>Short video pressentation that I made</h2>
-                <p>sussy baka :p</p>
+                <h2>Short video</h2>
+                <p>Animated Video of ME -_-</p>
             </section>
             <footer>
                 <p>&copy; 2024 My Personal Website(try0)</p>
