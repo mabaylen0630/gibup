@@ -17,7 +17,7 @@ const About = () => {
                 </p>
             </div>
             <footer>
-                <p>&copy; 2024 My Personal Website(try0)</p>
+                <p>MBAYLEN Personal Website</p>
             </footer>
         </div>
     );
