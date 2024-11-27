@@ -6,14 +6,14 @@ const Home = () => {
 
             <section id="about me">
                 <h2>About Me</h2>
-                <p>Some not really accurate information about me lol :D</p>
+                <p>Summary of my Personal Informations</p>
             </section>
             <section id="random shits">
-                <h2>Random Stuffs</h2>
-                <p>idk just click it if ur curious -_- </p>
+                <h2>Random Photos</h2>
+                <p>Random Photos that I've captured :></p>
             </section>
             <section id="short video">
-                <h2>..........</h2>
+                <h2>Short video pressentation that I made</h2>
                 <p>sussy baka :p</p>
             </section>
             <footer>
