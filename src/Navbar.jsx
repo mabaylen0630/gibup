@@ -12,7 +12,7 @@ const Navbar = () => {
                 About Me
             </NavLink>
             <NavLink to="/random" className={({ isActive }) => (isActive ? "active" : "")}>
-                Random Shits
+                Random Photos
             </NavLink>
             <NavLink to="/top" className={({ isActive }) => (isActive ? "active" : "")}>
                 Tercespot
